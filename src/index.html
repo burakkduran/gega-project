@@ -14,17 +14,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-slate-800">
     <!-- Header Section -->
-    <header class="bg-black py-12 text-gega-grey font-gemunu uppercase">
+    <header class="bg-black py-6 lg:py-12 text-gega-grey ">
       <!-- Header Container -->
-      <div class="container flex items-center justify-between space-x-16">
+      <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
         <!-- Header Logo -->
-        <a href="#" class="text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey">GEGA</a>
+        <a href="#" class="text-3xl pl-6 md:pl-0 lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey">GEGA</a>
+        <!-- Mobile Menü -->
+        <div class="block md:hidden pr-6">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
         <!-- Header Navigation -->
-        <nav class="flex flex-1 justify-between">
+        <nav class="hidden md:flex flex-1 justify-between">
           <!-- Header Menü -->
-          <div class="flex space-x-8 text-lg items-center">
+          <div class="flex space-x-4 lg:space-x-8 lg:text-lg items-center">
             <a href="#" class="hover:text-gega-melon transition duration-500 uppercase">movie</a>
             <a href="#" class="hover:text-gega-melon transition duration-500 uppercase">celebrities</a>
             <a href="#" class="hover:text-gega-melon transition duration-500 uppercase">blog</a>
@@ -32,18 +41,18 @@
             <a href="#" class="hover:text-gega-melon transition duration-500 uppercase">about</a>
           </div>
           <!-- Header Login -->
-          <div class="flex items-center space-x-8">
+          <div class="flex items-center space-x-4 lg:space-x-8">
             <!-- Search Area -->
             <form>
               <div class="group border-r px-4 mx-4 py-1 border-gega-red">
-                <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-44 transition duration-500">
+                <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-24 lg:w-44 transition duration-500">
                 <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
               </div>
             </form>
             <!-- SignUp Area -->
-            <div class="flex items-center space-x-8 text-lg">
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
               <a href="#" class="">Login</a>
-              <a href="#" class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500">Sign Up</a>
+              <a href="#" class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500 whitespace-nowrap">Sign Up</a>
             </div>
           </div>
         </nav>
